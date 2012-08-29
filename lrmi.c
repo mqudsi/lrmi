@@ -65,6 +65,13 @@ OTHER DEALINGS IN THE SOFTWARE.
 #define REAL_MEM_SIZE 	0x40000
 #define REAL_MEM_BLOCKS 	0x100
 
+#if defined(__linux) && !defined(IF_MASK)
+#define TF_MASK X86_EFLAGS_TF
+#define IF_MASK X86_EFLAGS_IF
+#define VIF_MASK X86_EFLAGS_VIF
+#define IOPL_MASK X86_EFLAGS_IOPL
+#endif
+
 struct mem_block {
 	unsigned int size : 20;
 	unsigned int free : 1;
