@@ -37,3 +37,7 @@ Oleg I. Vdovikin <vdovikin@jscc.ru>
 
 Peter Kosinar <goober@ksp.sk>
 * pthread fixes
+
+Mahmoud Al-Qudsi <mqudsi@neosmart.net>
+* compilation against latest kernel headers
+
